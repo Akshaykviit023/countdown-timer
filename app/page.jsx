@@ -1,8 +1,8 @@
-"use client"
+"use client";
 
-import { useState, useEffect } from 'react'
+import { useState, useEffect } from 'react';
 
-import Navbar from '@/components/Navbar';
+import Navbar from './_components/navbar';
 
 export default function Home() {
   const initialTime = 25 * 60;
@@ -39,7 +39,7 @@ export default function Home() {
 
   return (
     <>
-    <Navbar />
+      <Navbar />
      <h1 className="text-center text-[15rem] font-bold bg-gradient-to-r from-[#cde18b]  to-[#245021] text-transparent bg-clip-text">{formatTime(timeLeft)}</h1>
 
      <div className="flex justify-center gap-12 text-white text-xl">
